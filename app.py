@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from model import DualHeadDisasterPINN, compute_physics_features
 
 st.set_page_config(
-    page_title="24h Disaster PINN Early Warning",
+    page_title="24h Mountain Disaster Early Warning System",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -263,8 +263,8 @@ def fetch_live_weather(lat, lon):
 models, feat_means, feat_stds = load_models()
 
 # Header
-st.markdown("<h2 style='margin-bottom:0px; font-weight:700;'>Physics-Informed Neural Network (PINN)</h2>", unsafe_allow_html=True)
-st.markdown("<p style='color:#8b949e; margin-top:2px; font-size:0.92rem;'>24-Hour Prognostic Disaster Early Warning for Mountain Cloudbursts and Flash Floods</p>", unsafe_allow_html=True)
+st.markdown("<h2 style='margin-bottom:0px; font-weight:700;'>24-Hour Mountain Cloudburst & Flash Flood Early Warning System</h2>", unsafe_allow_html=True)
+st.markdown("<p style='color:#8b949e; margin-top:2px; font-size:0.92rem;'>Prognostic Disaster Prevention Engine powered by Physics-Informed Neural Networks (PINN)</p>", unsafe_allow_html=True)
 
 # Sidebar
 st.sidebar.markdown("### Orographic Station")
